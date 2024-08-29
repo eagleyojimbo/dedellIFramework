@@ -1,0 +1,57 @@
+# Ignore build directories
+*/bin/*
+*/obj/*
+*/Debug/*
+/Release/
+/.vscode/
+/.idea/
+*vs/
+
+# Ignore project settings
+*.user
+*.suo
+*.sln.cache
+*.csproj.user
+*.csproj.Transient
+
+# Ignore compiled output
+*.dll
+*.exe
+*.pdb
+*.mdb
+
+# Ignore packages and dependency files
+/bin/
+/obj/
+
+# Ignore temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Ignore generated files
+*.generated.cs
+*.designer.cs
+
+# Ignore Mac and Linux system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Ignore Windows system files
+Thumbs.db
+Desktop.ini
+
+# Ignore JetBrains Rider files
+.idea/
+
+# Ignore Visual Studio Code files
+.vscode/
+.slnx.sqlite
+
+# Ignore Rider/JetBrains specific files (if applicable)
+.idea/
+
+
