@@ -53,9 +53,11 @@
     <Compile Include="Commands\ExecuteAssembly.cs" />
     <Compile Include="Commands\ListDirectory.cs" />
     <Compile Include="Commands\ListProcesses.cs" />
+    <Compile Include="Commands\MakeToken.cs" />
     <Compile Include="Commands\PrintWorkingDirectory.cs" />
     <Compile Include="Commands\Run.cs" />
     <Compile Include="Commands\Shell.cs" />
+    <Compile Include="Commands\StealToken.cs" />
     <Compile Include="Commands\TestCommand.cs" />
     <Compile Include="Commands\WhoAmI.cs" />
     <Compile Include="Extensions.cs" />
@@ -67,6 +69,9 @@
     <Compile Include="Models\AgentTaskResult.cs" />
     <Compile Include="Models\CommModule.cs" />
     <Compile Include="Models\HttpCommModule.cs" />
+    <Compile Include="Commands\RevToSelf.cs" />
+    <Compile Include="Native\Advapi32.cs" />
+    <Compile Include="Native\Kernel32.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
